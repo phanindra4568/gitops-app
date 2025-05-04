@@ -24,7 +24,7 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443 Get the ArgoCD admin p
 kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d Deploy app using ArgoCD CLI:
 
 argocd login localhost:8080 --username admin --password --insecure argocd app create nginx-app
---repo(https://github.com/RavindranadhTagore/gitops-demo.git)//gitops-demo.git
+--repo(https://github.com/phanindra4568/gitops-app.git)//gitops-demo.git
 --path k8s
 --dest-server https://kubernetes.default.svc
 --dest-namespace default
