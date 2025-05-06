@@ -9,11 +9,13 @@ ArgoCD
 GitHub
 Docker
 How It Works
-Kubernetes manifest files (deployment.yaml, service.yaml) are stored in a GitHub repo.
-ArgoCD watches the repo and syncs changes to the cluster.
-When a change is pushed to Git (e.g., updating image version), ArgoCD applies it automatically.
+1.  Kubernetes manifest files (deployment.yaml, service.yaml) are stored in a GitHub repo.
+2.  ArgoCD watches the repo and syncs changes to the cluster.
+3.  When a change is pushed to Git (e.g., updating image version), ArgoCD applies it automatically.
+
 Steps to Run
-Start Minikube:
+
+1. Start Minikube:
 
 minikube start --driver=docker Install ArgoCD:
 
